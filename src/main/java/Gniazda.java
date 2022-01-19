@@ -7,11 +7,6 @@ import java.util.Scanner;
 
 public class Gniazda {
 
-    /*
-    1. Napisz program, wykorzystujący obsługę gniazd, który łączy się z portalami;
-      www.wp.pl, www.ug.gda.pl, www. Onet.pl, www.interia.pl , na porcie 80
-       i wyświetla adres ip strony internetowej, numer portu i portu lokalnego.
-    */
 
     public static void displayNetworkInformation() {
         ArrayList<Socket> socketList = new ArrayList<>();
@@ -28,10 +23,6 @@ public class Gniazda {
         socketList.forEach(System.out::println);
     }
 
-    /*
-    2. Napisz program  wypisujący adres ip  i nazwę komputera lokalnego. Wykorzystaj obiekt INetAdress.
-    */
-
     public static void displayLocalNetworkInformation () {
         InetAddress inetAddress = null;
 
@@ -46,10 +37,6 @@ public class Gniazda {
         System.out.println(inetAddress.getHostName());
     }
 
-    /*
-  3. Napisz program, który wyświetli adres IP przypisany do urządzenia sieciowego
-  o nazwie przekazanej w postaci argumentu w wierszu poleceń.
-   */
     public static void displayIpAddressOfGivenHost() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Provide domain name:");
